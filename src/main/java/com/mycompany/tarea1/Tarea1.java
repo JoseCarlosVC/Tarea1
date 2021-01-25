@@ -6,22 +6,23 @@
 package com.mycompany.tarea1;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 /**
  *
  * @author jose
  */
 public class Tarea1 {
     String nombre;
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException{
         Double  x, y,z;
         float a, b, c;
         
-        BufredReader bufer = new BufferedReader(new ImputStreamReader());
+        BufferedReader bufer = new BufferedReader(new InputStreamReader(System.in));
         String entrada;
             
         System.out.println("Escribe el valor de x: ");
         entrada = bufer.readLine();
-        x= Integer.parseInt(entrada);
+        x= Double.parseInt(entrada);
         System.out.println("Escribe el valor de y: ");
         entrada = bufer.readLine();
         y = Double.parseDouble(entrada);
